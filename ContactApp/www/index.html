@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+       
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+        <meta name="color-scheme" content="light dark">
+        <link rel="stylesheet" href="lib/jquery.mobile-1.3.2.min.css" />
+        <script src="lib/jquery-1.11.1.min.js"></script>        
+        <script src="lib/jquery.mobile-1.3.2.min.js"></script>
+       
+        <link rel="stylesheet" href="css/index.css">
+        <script src="js/index.js"></script>
+        <script type="text/javascript" charset="utf-8" src="cordova.js"></script>  
+        <title>Mes contacts</title>
+    </head>
+    <body>
+        <div data-role="page" id="contact-list">
+            <div data-role="header">
+            <h1> Mes contacts</h1>
+            </div>
+            <div data-role="content">
+            
+                <ul data-role="listview" id="contactlist" data-inset="true" data-filter="true">
+                    
+                  <li>
+                    <a href="#contact-show">
+                        <img src="img/image.png" width="20%" >
+                        <h1>Annie diop</h1>
+                        <p>77 290 19 66</p>
+                    </a>
+                </li>   
+                
+                
+                </ul>
+            </div>
+        </div>
+     <div data-role="page" id="contact-show">
+            <div data-role="header">
+                <h1>Profil d'un contact</h1>
+            </div>
+            <div data-role="content">
+                <ul data-role="listview" data-inset="true">
+                    <li>
+                    <img src="img/image.png" >
+                    <h1>Nom du contact</h1>
+                    <p id="contactName">Annie DIOP</p>
+                </li>
+                <li>
+                    <h1>Téléphone</h1>
+                    <p id="contactNumber">77 999 99 99</p>
+                </li>
+                <li>
+                    <h1>Email</h1>
+                    <p id="contactEmail">mail.esp.sn</p>
+                </li>
+                <li>
+                    <h1>Adresse</h1>
+                    <p id="contactAdress">fass</p>
+                </li>
+                <li>
+                    <h1>Organisation</h1>
+                    <p id="contactOrganisation">ESP</p>
+                </li>
+                </ul>
+            </div>
+            <div data-role="footer" data-position="fixed">
+                <h3>Mes contacts &copy; Mars 2021</h3>
+
+            </div>
+        </div>
+    </body>
+</html>
